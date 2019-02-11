@@ -13,5 +13,5 @@ while True:
         average=total/count
     except ValueError:
             print('Error', n,'is not a number') 
-print('')
+print('               ')
 print('Total:' ,total,'Count:', count,'Average:', average)
