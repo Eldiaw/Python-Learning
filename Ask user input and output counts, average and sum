@@ -1,0 +1,17 @@
+# Code ask user input numbers and output total, Count and average of the numbers
+total=0
+count=0
+average=0
+while True:
+    n=input('Please enter numbers and enter done when you are done:')
+    if n == 'done':
+        break
+    try:
+        nb=int(n)
+        total=total+nb
+        count=count+1
+        average=total/count
+    except ValueError:
+            print('Error', n,'is not a number') 
+print('')
+print('Total:' ,total,'Count:', count,'Average:', average)
